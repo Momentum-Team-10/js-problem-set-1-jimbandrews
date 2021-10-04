@@ -47,12 +47,11 @@ function fahrenheitToKelvin(Ftemp) {
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
-function lesser(num1, num2) {
-    if (num1 > num2) {
-        return num2;
-    }
-    else {
-        return num1;
+function lesser(a, b) {
+    if (a > b) {
+        return b;
+    } else {
+        return a;
     }
 }
 // 10. Create a function called multigreeting that takes a name
@@ -69,14 +68,11 @@ function lesser(num1, num2) {
 function multigreeting(name, lang) {
     if (lang === "en") {
         return "Hello, " + name + "!";
-    }
-    else if (lang === "es") {
+    } else if (lang === "es") {
         return "¡Hola, " + name + "!";
-    }
-    else if (lang === "fr") {
+    } else if (lang === "fr") {
         return "Bonjour, " + name + "!";
-    }
-    else if (lang === "eo") {
+    } else if (lang === "eo") {
         return "Saluton, " + name + "!";
     }
 }
@@ -106,3 +102,7 @@ function multigreeting(name, lang) {
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+function gcd(a,b) {
+    d = 0;
+
+}
