@@ -1,10 +1,10 @@
 // 1. Set the variable `givenName` to the string "Addison".
-let givenName = 'Addison';
+let givenName = "Addison";
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
 let candies = 20;
 let people = 6;
-let leftover = candies%people
+let leftover = candies % people;
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
 function greeting(name) {
@@ -14,25 +14,25 @@ function greeting(name) {
 // return true if it is odd and false if it is not. An odd number is a
 // number which, when divided by 2, has a remainder of 1 or -1.
 function isOdd(number) {
-    return Math.abs(number%2) === 1;
+    return Math.abs(number % 2) === 1;
 }
 // 5. Create a function called isEven that, given a number, will
 // return true if it is even and false if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
 function isEven(number) {
-    return number%2 ===0;
+    return number % 2 === 0;
 }
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
 function fahrenheitToCelsius(Ftemp) {
-    return (Ftemp - 32)*(5/9);
+    return (Ftemp - 32) * (5 / 9);
 }
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
 function celsiusToFahrenheit(Ctemp) {
-    return Ctemp*(9/5) + 32;
+    return Ctemp * (9 / 5) + 32;
 }
 // 8. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -102,27 +102,27 @@ function multigreeting(name, lang) {
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
-function gcd(a,b) {
+function gcd(a, b) {
     let d = 0;
 
-    while (a%2 === 0 && b%2 === 0) {
+    while (a % 2 === 0 && b % 2 === 0) {
         a /= 2;
         b /= 2;
         d++;
     }
 
     while (a !== b) {
-        if (a%2 === 0) {
+        if (a % 2 === 0) {
             a /= 2;
-        } else if (b%2 === 0) {
+        } else if (b % 2 === 0) {
             b /= 2;
-        } else if (a>b) {
-            a = (a-b)/2;
+        } else if (a > b) {
+            a = (a - b) / 2;
         } else {
-            b = (b-a)/2;
+            b = (b - a) / 2;
         }
     }
 
     let g = a;
-    return g * (2**d);
+    return g * 2 ** d;
 }
