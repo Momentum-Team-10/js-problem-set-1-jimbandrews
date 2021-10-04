@@ -14,12 +14,14 @@ function greeting(name) {
 // return true if it is odd and false if it is not. An odd number is a
 // number which, when divided by 2, has a remainder of 1 or -1.
 function isOdd(number) {
-    return number%2 !== 0;
+    return Math.abs(number%2) === 1;
 }
 // 5. Create a function called isEven that, given a number, will
 // return true if it is even and false if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
-
+function isEven(number) {
+    return number%2 ===0;
+}
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
