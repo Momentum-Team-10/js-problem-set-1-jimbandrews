@@ -113,9 +113,9 @@ function gcd(a,b) {
 
     while (a !== b) {
         if (a%2 === 0) {
-            a = a/2;
+            a /= 2;
         } else if (b%2 === 0) {
-            b = b/2;
+            b /= 2;
         } else if (a>b) {
             a = (a-b)/2;
         } else {
