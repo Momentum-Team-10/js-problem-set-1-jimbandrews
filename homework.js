@@ -106,8 +106,8 @@ function gcd(a,b) {
     let d = 0;
 
     while (a%2 === 0 && b%2 === 0) {
-        a = a/2;
-        b = b/2;
+        a /= 2;
+        b /= 2;
         d++;
     }
 
