@@ -46,13 +46,22 @@ fahrenheitToKelvin = Ftemp => fahrenheitToCelsius(Ftemp) + 273.15;
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
-function lesser(a, b) {
+// function lesser(a, b) {
+//     if (a > b) {
+//         return b;
+//     } else {
+//         return a;
+//     }
+// }
+
+let lesser = (a,b) => {
     if (a > b) {
         return b;
     } else {
         return a;
     }
 }
+
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
 // in the specified language. The supported languages and their
@@ -64,7 +73,7 @@ function lesser(a, b) {
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
-function multigreeting(name, lang) {
+let multigreeting = (name, lang) => {
     if (lang === "en") {
         return "Hello, " + name + "!";
     } else if (lang === "es") {
@@ -101,7 +110,7 @@ function multigreeting(name, lang) {
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
-function gcd(a, b) {
+let gcd = (a, b) => {
     let d = 0;
 
     while (a % 2 === 0 && b % 2 === 0) {
