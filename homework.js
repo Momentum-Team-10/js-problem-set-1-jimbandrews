@@ -82,6 +82,8 @@ let multigreeting = (name, lang) => {
         return "Bonjour, " + name + "!";
     } else if (lang === "eo") {
         return "Saluton, " + name + "!";
+    } else {
+        return
     }
 }
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
